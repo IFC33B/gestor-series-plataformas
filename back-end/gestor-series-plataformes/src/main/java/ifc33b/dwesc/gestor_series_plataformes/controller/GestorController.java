@@ -25,7 +25,7 @@ public class GestorController {
     }
 
     @PostMapping("/series") // Crea una nueva serie
-    public int postMethodName(@Valid @RequestBody String entity) {
+    public int createSerie(@Valid @RequestBody String entity) {
         return 0;
     }
 
