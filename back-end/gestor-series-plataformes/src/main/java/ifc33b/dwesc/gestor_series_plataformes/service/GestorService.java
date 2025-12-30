@@ -19,6 +19,7 @@ import ifc33b.dwesc.gestor_series_plataformes.repository.SerieRepository;
 public class GestorService {
     @Autowired
     PlataformaRepository plataformaRepository;
+    @Autowired
     SerieRepository serieRepository;
 
     // Devuelve todas las plataformas
@@ -30,7 +31,7 @@ public class GestorService {
 
     // Devuelve las series de una plataforma
     public List<SerieResponse> getSeries(Long id) {
-        return serieRepository.findByPlataformaId(id).stream()
+        return serieRepository.getSeriesInPlataforma(id).stream()
                 .map(SerieResponse::new)
                 .collect(Collectors.toList());
     }
