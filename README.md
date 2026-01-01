@@ -152,8 +152,8 @@ Content-Type: application/json
 ```
 
 **Parámetros requeridos:**
-- `titol` (string, obligatorio): Nombre de la serie
-- `genere` (string, obligatorio): Genero de la serie
+- `titol` (string, obligatorio): Nombre de la serie, entre 3 y 25 caracteres
+- `genere` (string, obligatorio): Genero de la serie, entre 3 y 25 caracteres
 - `plataformaId` (int, obligatorio): ID de la plataforma a la que pertenece
 
 **Response (201 Created):**
@@ -250,6 +250,11 @@ gestor-series-plataformes/
         │       │   │   ├── formulari-series.scss
         │       │   │   ├── formulari-series.ts
         │       │   │   └── formulari-series.spec.ts
+        │       │   ├── llista-plataformes/
+        │       │   │   ├── llista-plataformes.html
+        │       │   │   ├── llista-plataformes.scss
+        │       │   │   ├── llista-plataformes.ts
+        │       │   │   └── llista-plataformes.spec.ts
         │       │   └── llista-series/
         │       │       ├── llista-series.html
         │       │       ├── llista-series.scss
